@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -35,4 +35,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom Css for the project */
+.container{
+  width :70%;
+  padding: 20px  0;
+  /* background-color:cadetblue; */
+  margin-left:15% ;
+}
+
+.padd{
+  padding: 0 15px;
+  /* text-align: center; */
+}
+
+.search-field{
+  width: 80%;
+
+  font-size: 2rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-indent: 20px;
+  outline: hotpink;
+
+}
+
+.movie{
+  padding: 5px;
+  /* background-color: hotpink; */
+  margin: 10px 0;
+  display: flex;
+}
+
+.poster{
+  height: 600px;
+  width: 30%;
+  background-color: cyan;
+  overflow: hidden;
+
+}
+.poster-img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.details{
+ 
+  width: 65%;
+  /* background-color: lawngreen; */
+}
+
+h1,h2,h3{
+  margin: 0;
+}
+
+.ratings{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.search-bar{
+  display: flex;
+  margin: 10px 0;
+}
+
+.sbtn{
+  margin-left: 10px;
+  width: 17%;
+  background-color: gold;
+  color: black;
+  font-size: 25px;
+  border:none;
+  border-radius: 10px;
 }
