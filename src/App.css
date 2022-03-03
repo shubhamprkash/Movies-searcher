@@ -1,6 +1,6 @@
-.App {
-  /* text-align: center; */
-}
+/* .App {
+   text-align: center; 
+} */
 
 .App-logo {
   height: 40vmin;
@@ -48,6 +48,7 @@
 .padd{
   padding: 0 15px;
   /* text-align: center; */
+
 }
 
 .search-field{
@@ -66,6 +67,7 @@
   /* background-color: hotpink; */
   margin: 10px 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .poster{
@@ -100,7 +102,8 @@ h1,h2,h3{
 
 .search-bar{
   display: flex;
-  margin: 10px 0;
+  margin: 10px 5px 20px 5px;
+
 }
 
 .sbtn{
@@ -111,4 +114,19 @@ h1,h2,h3{
   font-size: 25px;
   border:none;
   border-radius: 10px;
+  cursor: pointer;
+ 
+  
+}
+
+.sbtn:hover{
+  background-color: darkgoldenrod;
+}
+
+.footinfo{
+  text-align: center;
+  margin: 10px 5px;
+  padding: 5px 10px;
+  margin-top: 50px;
+  background-color: burlywood;
 }

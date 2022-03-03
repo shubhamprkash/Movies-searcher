@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     getMovie();
-  }, []);
+  },[]);
 
 
   function readTitle(value){
@@ -46,7 +46,9 @@ function App() {
             />
             <button className=
             'sbtn' onClick={getMovie}>Get It!</button>
+            
           </div>
+     
             {
               movieinfo?.Error===undefined?(
             
@@ -96,6 +98,7 @@ function App() {
         </div>
               
       </div>
+      <div className="footinfo"><strong>This Web App is Crafted By: Shubham Prakash | 2022</strong></div>
     </div>
   );
 }
