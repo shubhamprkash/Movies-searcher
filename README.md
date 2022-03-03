@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was Developed by ##Shubham Prakash 
+
+It finds the movies / series/ dramas details and summary with albus art from open movies database.
+Just type the correct name and click search!!
+Enjoy 👍🏻👍🏻
 
 ## Available Scripts
 
