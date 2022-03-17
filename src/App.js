@@ -7,8 +7,7 @@ function App() {
   let [movieinfo, setMovieinfo] = useState(null);
   let[title, setTitle]=useState("pk");
 
-  useEffect(() => {
-    getMovie();
+  useEffect(() => { getMovie();
   },[]);
 
 
@@ -35,7 +34,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="padd">
-          <h1>Movies Search</h1>
+          <h1 className="title-heading">Movies Search</h1>
 
           <div className="search-bar">
             <input

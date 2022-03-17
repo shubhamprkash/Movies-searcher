@@ -92,6 +92,10 @@
 h1,h2,h3{
   margin: 0;
 }
+.title-heading
+{
+  text-align: center;
+}
 
 .ratings{
   display: flex;
