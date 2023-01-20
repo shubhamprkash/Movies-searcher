@@ -2,6 +2,8 @@
 
 This project was Developed by ##Shubham Prakash 
 
+Live @ https://moviessearcher.netlify.app/
+
 It finds the movies / series/ dramas details and summary with albus art from open movies database.
 Just type the correct name and click search!!
 Enjoy 👍🏻👍🏻
