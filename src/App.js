@@ -97,7 +97,7 @@ function App() {
         </div>
               
       </div>
-      <div className="footinfo"><strong>This Web App is Crafted By: Shubham Prakash | 2022</strong></div>
+      <div className="footinfo"><strong>This Web App is Crafted By: Shubham Prakash | 2023</strong></div>
     </div>
   );
 }
