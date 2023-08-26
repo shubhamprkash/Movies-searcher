@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   let [movieinfo, setMovieinfo] = useState(null);
-  let[title, setTitle]=useState("pk");
+  let[title, setTitle]=useState("world");
 
   useEffect(() => { getMovie();
   },[]);
