@@ -1,0 +1,63 @@
+{
+  "short_name": "Movie Searcher",
+  "name": "Movies Searcher - Find Movies & Series",
+  "description": "Search for movies, series, and anime by keywords. Get ratings, plot, cast, and more information.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "camImg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "camImg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "camImg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1e1e1e",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "screenshots": [
+    {
+      "src": "camImg.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "camImg.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["entertainment", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Search Movies",
+      "short_name": "Search",
+      "description": "Search for movies quickly",
+      "url": "/",
+      "icons": [
+        {
+          "src": "camImg.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
