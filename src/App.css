@@ -284,7 +284,7 @@ html.dark-mode .search-field {
 }
 
 .details .padd {
-  padding: 0;
+  padding: 5px;
 }
 
 .details h1 {
@@ -298,23 +298,22 @@ html.dark-mode .search-field {
   color: var(--primary);
   font-weight: 600;
   font-size: 0.95rem;
-  margin: 0 0 10px 0;
+  
 }
 
 .details p {
-  margin: 8px 0;
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 0.85rem;
+  margin: 15px 0;
+  padding: 5px;
 }
 
 .details strong {
   display: block;
   color: var(--primary);
   font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.6px;
 }
 
 .ratings{
@@ -413,19 +412,19 @@ html.dark-mode .search-field {
   }
 
   .movie {
-    flex-direction: row;
+    flex-direction: column;
     padding: 10px;
     gap: 10px;
     margin: 8px 0;
   }
 
   .poster {
-    width: 180px;
-    height: 280px;
-    min-height: auto;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
     max-height: none;
     min-width: auto;
-    max-width: 180px;
+    max-width: 100%;
   }
 
   .details {
@@ -491,7 +490,10 @@ html.dark-mode .search-field {
   }
 
   .poster {
-    height: 350px;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    max-width: 100%;
   }
 
   .details h1 {

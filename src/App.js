@@ -1,18 +1,18 @@
 import "./App.css";
 import { useState, useEffect, useCallback } from "react";
 
-//  https://www.omdbapi.com/?i=tt3896198&apikey=9def8a00
 
 function App() {
   let [movieinfo, setMovieinfo] = useState(null);
   let[title, setTitle]=useState("world");
+  let[inputValue, setInputValue]=useState("world");
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem("darkMode");
     return savedMode ? JSON.parse(savedMode) : false;
   });
 
   const getMovie = useCallback(() => {
-    let url = ``;
+    let url = `https://www.omdbapi.com/?t=${title}&apikey=${process.env.REACT_APP_OMDB_API_KEY}`;
     fetch(url)
       .then((response) => response.json())
       .then((movie) => {
@@ -35,9 +35,14 @@ function App() {
     document.documentElement.classList.toggle("dark-mode", darkMode);
   },[darkMode]);
 
+  function handleSearch() {
+    setTitle(inputValue);
+  }
 
-  function readTitle(value){
-    setTitle(value);
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
   }
 
   return (
@@ -60,9 +65,11 @@ function App() {
               type="text"
               placeholder="Enter Movie Name"
               className="search-field "
-              onChange={(event)=>{readTitle(event.target.value)}}
+              value={inputValue}
+              onChange={(event)=>{setInputValue(event.target.value)}}
+              onKeyPress={handleKeyPress}
             />
-            <button className='sbtn' onClick={getMovie}>Get It!</button>
+            <button className='sbtn' onClick={handleSearch}>Get It!</button>
             
           </div>
      
@@ -115,7 +122,7 @@ function App() {
         </div>
               
       </div>
-      <div className="footinfo"><strong> Crafted By: Shubham Prakash | 2026</strong></div>
+      <div className="footinfo"><strong> All rights reserved  &copy; 2026 Shubham Prakash</strong></div>
     </div>
   );
 }
